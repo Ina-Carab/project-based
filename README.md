@@ -1,78 +1,134 @@
-<div align="center"><img src="https://capsule-render.vercel.app/api?type=waving&color=0:050505,50:111111,100:00C9FF&height=220&section=header&text=ILYAAS%20CARAB&fontSize=50&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Web%20Developer%20%7C%20Frontend%20Developer%20%7C%20Creative%20Coder&descAlignY=58&descSize=18" width="100%"/><br><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=25&duration=2800&pause=900&color=00C9FF&center=true&vCenter=true&width=750&lines=Welcome+to+ILYAAS+CARAB's+GitHub!;Web+Developer+%7C+Frontend+Developer;Turning+Ideas+Into+Digital+Experiences;Code.+Create.+Innovate.+🚀" /><br><br>
+<div align="center"><img src="https://capsule-render.vercel.app/api?type=venom&color=0:000000,50:101828,100:00E5FF&height=260&section=header&text=ILYAAS%20CARAB&fontSize=52&fontColor=ffffff&animation=twinkling&fontAlignY=42&desc=CREATIVE%20WEB%20DEVELOPER%20%E2%80%A2%20FRONTEND%20ENGINEER&descAlignY=62&descSize=16&descColor=00E5FF" width="100%"/><br><img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=700&size=23&duration=2500&pause=800&color=00E5FF&center=true&vCenter=true&width=800&lines=HEY%2C+I'M+ILYAAS+CARAB+👋;I+BUILD+MODERN+WEB+EXPERIENCES;DESIGN+%2B+CODE+%2B+CREATIVITY;WELCOME+TO+MY+DIGITAL+WORLD+🚀" /><br><br>
 
-<img src="https://github.com/platane/snk/raw/output/github-contribution-grid-snake-dark.svg" width="95%"/></div>---
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=YaxyeAxmed&bg_color=00000000&color=00E5FF&line=00E5FF&point=FFFFFF&area=true&hide_border=true" width="95%"/></div>---
 
-👋 Hey, I'm ILYAAS CARAB
+<div align="center">⚡ ILYAAS CARAB
+
+"WEB DEVELOPER" • "FRONTEND DEVELOPER" • "CREATIVE CODER"
+
+Turning ideas into modern digital experiences.
+
+</div>---
+
+🖤 ABOUT ME
 
 <table>
 <tr>
-<td width="55%" valign="middle">💻 Web Developer
+<td width="60%">┌─────────────────────────────────────┐
+│         ILYAAS CARAB                │
+├─────────────────────────────────────┤
+│                                     │
+│  💻 Web Developer                   │
+│  🎨 UI / UX Enthusiast              │
+│  ⚡ Creative Coder                  │
+│  🚀 Always Learning                 │
+│  🌐 Modern Web Experiences          │
+│                                     │
+└─────────────────────────────────────┘
 
-I love creating modern, responsive and beautiful websites.
+I enjoy creating clean, responsive and attractive websites with modern technologies.
 
-🎨 Creative Developer
+My goal is simple:
 
-I enjoy combining clean code + creative UI design.
+«Write clean code. Create beautiful interfaces. Keep learning.»
 
-🚀 Always Learning
-
-Currently exploring new technologies and improving my development skills.
-
-🌐 My Focus
-
-- ⚡ Frontend Development
-- 🎨 UI / UX Design
-- 📱 Responsive Websites
-- 🐍 Python
-- ⚛️ React
-- 💡 Creative Coding
-
-</td><td width="45%" align="center"><img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="380"/></td>
+</td><td width="40%" align="center"><img src="https://github-readme-stats.vercel.app/api?username=YaxyeAxmed&show_icons=true&theme=transparent&hide_border=true&title_color=00E5FF&icon_color=00E5FF&text_color=FFFFFF" width="100%"/></td>
 </tr>
 </table>---
 
-🖱️ Interactive & Creative
+🧊 MY DIGITAL WORLD
 
-<div align="center"><img src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" width="500"/><br><br>
+<div align="center"><table>
+<tr>
+<td align="center" width="33%">💻
 
-✨ Code • Design • Creativity • Innovation
+DEVELOPMENT
+
+Modern websites
+Responsive layouts
+Interactive interfaces
+
+</td><td align="center" width="33%">🎨
+
+DESIGN
+
+Clean UI
+Creative layouts
+Modern aesthetics
+
+</td><td align="center" width="33%">🚀
+
+GROWTH
+
+New technologies
+New projects
+Constant learning
+
+</td>
+</tr>
+</table></div>---
+
+🛠️ TECH STACK
+
+<div align="center">FRONTEND
+
+<img src="https://skillicons.dev/icons?i=html,css,js,react&theme=dark" /><br><br>
+
+PROGRAMMING
+
+<img src="https://skillicons.dev/icons?i=python&theme=dark" /><br><br>
+
+TOOLS
+
+<img src="https://skillicons.dev/icons?i=git,github,vscode&theme=dark" /></div>---
+
+📊 GITHUB PERFORMANCE
+
+<div align="center"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YaxyeAxmed&layout=donut&theme=transparent&hide_border=true&title_color=00E5FF&text_color=FFFFFF" width="42%"/><img src="https://github-readme-streak-stats.herokuapp.com/?user=YaxyeAxmed&theme=transparent&hide_border=true&ring=00E5FF&fire=00E5FF&currStreakLabel=00E5FF&sideLabels=FFFFFF&currStreakNum=FFFFFF&sideNums=FFFFFF" width="52%"/></div>---
+
+🎯 CURRENTLY
+
+<div align="center">+ Building modern web projects
++ Improving JavaScript skills
++ Learning React
++ Exploring Python
++ Creating better UI designs
++ Growing every single day
 
 </div>---
 
-🛠️ Tech Stack
+💎 MY PHILOSOPHY
 
-🎨 Frontend
+<div align="center">"CODE"
 
-<p align="center"><img src="https://skillicons.dev/icons?i=html,css,js,react&theme=dark" /></p>🐍 Programming
+⬇️
 
-<p align="center"><img src="https://skillicons.dev/icons?i=python&theme=dark" /></p>⚙️ Tools
+"CREATE"
 
-<p align="center"><img src="https://skillicons.dev/icons?i=git,github,vscode&theme=dark" /></p>---
+⬇️
 
-📊 GitHub Analytics
+"INNOVATE"
 
-<div align="center"><img src="https://github-readme-stats.vercel.app/api?username=YaxyeAxmed&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&bg_color=00000000&title_color=00C9FF&icon_color=00C9FF&text_color=FFFFFF" width="48%"/><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YaxyeAxmed&layout=compact&theme=tokyonight&hide_border=true&bg_color=00000000&title_color=00C9FF&text_color=FFFFFF" width="48%"/><br><br>
+⬇️
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=YaxyeAxmed&theme=tokyonight&hide_border=true&background=00000000&ring=00C9FF&fire=00C9FF&currStreakLabel=00C9FF" width="65%"/></div>---
+"REPEAT"
 
-🚀 What I'm Building
-
-<div align="center">💻 Web Apps| 🎨 UI Designs| 🐍 Python Projects
-Modern Websites| Creative Interfaces| Automation & Learning
-Responsive Apps| Clean Designs| New Ideas
+<br>“Every line of code is another step forward.”
 
 </div>---
 
-🌐 Connect With Me
+🌐 CONNECT
 
 <div align="center"><a href="https://linkedin.com/in/YOUR-LINKEDIN">
-<img src="https://img.shields.io/badge/LINKEDIN-00C9FF?style=for-the-badge&logo=linkedin&logoColor=white"/>
-</a> 
+<img src="https://img.shields.io/badge/LINKEDIN-00E5FF?style=for-the-badge&logo=linkedin&logoColor=000000"/>
+</a>  
 
 <a href="mailto:YOUR-EMAIL@example.com">
-<img src="https://img.shields.io/badge/EMAIL-111111?style=for-the-badge&logo=gmail&logoColor=white"/>
-</a></div><br><div align="center">💎 ILYAAS CARAB
+<img src="https://img.shields.io/badge/EMAIL-FFFFFF?style=for-the-badge&logo=gmail&logoColor=000000"/>
+</a></div><br><div align="center"><img src="https://komarev.com/ghpvc/?username=YaxyeAxmed&style=for-the-badge&color=00E5FF&label=PROFILE+VIEWS"/><br><br>
 
-“Build something you're proud of.”
+🖤 ILYAAS CARAB
 
-<br><img src="https://komarev.com/ghpvc/?username=YaxyeAxmed&color=00C9FF&style=for-the-badge&label=PROFILE+VIEWS"/></div><br><img src="https://capsule-render.vercel.app/api?type=waving&color=0:00C9FF,50:111111,100:050505&height=120&section=footer" width="100%"/>
+"BUILD • LEARN • CREATE"
+
+</div><img src="https://capsule-render.vercel.app/api?type=waving&color=0:00E5FF,50:101828,100:000000&height=130&section=footer" width="100%"/>
