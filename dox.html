@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculator</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    width: 100%;
+    max-width: 430px;
+    min-height: 100vh;
+    background: #000;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+/* Display */
+.display {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 20px 5px 35px;
+    overflow: hidden;
+}
+
+#expression {
+    color: white;
+    font-size: 42px;
+    margin-bottom: 30px;
+}
+
+#expression .green {
+    color: #0d9588;
+}
+
+#result {
+    color: #777;
+    font-size: 45px;
+}
+
+/* Buttons */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+button {
+    width: 100%;
+    aspect-ratio: 1;
+    border: none;
+    border-radius: 50%;
+    background: #18181a;
+    color: white;
+    font-size: 36px;
+    cursor: pointer;
+
+    transition:
+        transform 0.08s ease,
+        background 0.12s ease;
+    
+    -webkit-tap-highlight-color: transparent;
+}
+
+button:hover {
+    background: #242426;
+}
+
+/* Touch animation */
+button:active {
+    transform: scale(0.84);
+    background: #353537;
+}
+
+/* Functions */
+.clear {
+    color: #ff646b;
+}
+
+/* Operators */
+.operator {
+    background: #292929;
+    font-size: 40px;
+}
+
+.operator:hover {
+    background: #383838;
+}
+
+/* Equal */
+.equals {
+    background: #168d82;
+    font-size: 42px;
+}
+
+.equals:hover {
+    background: #1ca095;
+}
+
+.equals:active {
+    background: #10776f;
+}
+
+/* Mobile */
+@media (max-width: 450px) {
+
+    .calculator {
+        padding: 15px 18px 22px;
+    }
+
+    .display {
+        height: 300px;
+    }
+
+    #expression {
+        font-size: 38px;
+    }
+
+    #result {
+        font-size: 40px;
+    }
+
+    .buttons {
+        gap: 14px;
+    }
+
+    button {
+        font-size: 32px;
+    }
+
+    .operator,
+    .equals {
+        font-size: 36px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="calculator">
+
+    <!-- Display -->
+    <div class="display">
+        <div id="expression"></div>
+        <div id="result">0</div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="buttons">
+
+        <button class="clear" onclick="clearDisplay()">C</button>
+        <button onclick="deleteNumber()">⌫</button>
+        <button onclick="percentage()">%</button>
+        <button class="operator" onclick="chooseOperator('/')">÷</button>
+
+        <button onclick="number('7')">7</button>
+        <button onclick="number('8')">8</button>
+        <button onclick="number('9')">9</button>
+        <button class="operator" onclick="chooseOperator('*')">×</button>
+
+        <button onclick="number('4')">4</button>
+        <button onclick="number('5')">5</button>
+        <button onclick="number('6')">6</button>
+        <button class="operator" onclick="chooseOperator('-')">−</button>
+
+        <button onclick="number('1')">1</button>
+        <button onclick="number('2')">2</button>
+        <button onclick="number('3')">3</button>
+        <button class="operator" onclick="chooseOperator('+')">+</button>
+
+        <button onclick="toggleBracket()">()</button>
+        <button onclick="number('0')">0</button>
+        <button onclick="decimal()">.</button>
+        <button class="equals" onclick="calculate()">=</button>
+
+    </div>
+</div>
+
+<script>
+let currentNumber = "";
+let previousNumber = "";
+let operator = "";
+
+const expression = document.getElementById("expression");
+const result = document.getElementById("result");
+
+function getSymbol(op) {
+    if (op === "+") return "+";
+    if (op === "-") return "−";
+    if (op === "*") return "×";
+    if (op === "/") return "÷";
+    return "";
+}
+
+function updateDisplay() {
+
+    let text = previousNumber;
+
+    if (operator) {
+        text += " " + getSymbol(operator) + " ";
+    }
+
+    text += currentNumber;
+
+    expression.innerHTML = text || "";
+}
+
+function number(num) {
+
+    if (currentNumber === "0") {
+        currentNumber = num;
+    } else {
+        currentNumber += num;
+    }
+
+    updateDisplay();
+}
+
+function decimal() {
+
+    if (!currentNumber.includes(".")) {
+        currentNumber += currentNumber === "" ? "0." : ".";
+    }
+
+    updateDisplay();
+}
+
+function chooseOperator(op) {
+
+    if (currentNumber === "" && previousNumber === "") {
+        return;
+    }
+
+    if (previousNumber !== "" && currentNumber !== "") {
+        calculate();
+    }
+
+    previousNumber = currentNumber;
+    currentNumber = "";
+    operator = op;
+
+    updateDisplay();
+}
+
+function calculate() {
+
+    if (
+        previousNumber === "" ||
+        currentNumber === "" ||
+        operator === ""
+    ) {
+        return;
+    }
+
+    const first = parseFloat(previousNumber);
+    const second = parseFloat(currentNumber);
+
+    let answer;
+
+    switch (operator) {
+
+        case "+":
+            answer = first + second;
+            break;
+
+        case "-":
+            answer = first - second;
+            break;
+
+        case "*":
+            answer = first * second;
+            break;
+
+        case "/":
+
+            if (second === 0) {
+                result.textContent = "Error";
+                return;
+            }
+
+            answer = first / second;
+            break;
+    }
+
+    answer = Number(answer.toFixed(10));
+
+    expression.innerHTML =
+        previousNumber +
+        `<span class="green">${getSymbol(operator)}</span>` +
+        currentNumber;
+
+    result.textContent = answer;
+
+    currentNumber = answer.toString();
+    previousNumber = "";
+    operator = "";
+}
+
+function clearDisplay() {
+
+    currentNumber = "";
+    previousNumber = "";
+    operator = "";
+
+    expression.innerHTML = "";
+    result.textContent = "0";
+}
+
+function deleteNumber() {
+
+    currentNumber = currentNumber.slice(0, -1);
+
+    updateDisplay();
+}
+
+function percentage() {
+
+    if (currentNumber !== "") {
+
+        currentNumber =
+            (parseFloat(currentNumber) / 100).toString();
+
+        updateDisplay();
+    }
+}
+
+function toggleBracket() {
+
+    if (currentNumber === "") {
+        currentNumber = "(";
+    } else {
+        currentNumber += ")";
+    }
+
+    updateDisplay();
+}
+</script>
+
+</body>
+</html>

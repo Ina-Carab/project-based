@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    color: white;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.app {
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+}
+
+/* TOP HEADER */
+
+.top {
+    height: 105px;
+    min-height: 105px;
+    background: #000;
+    display: flex;
+    align-items: center;
+    padding: 0 18px;
+    position: relative;
+}
+
+.back {
+    width: 48px;
+    height: 55px;
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 55px;
+    font-weight: 200;
+    cursor: pointer;
+    line-height: 40px;
+}
+
+.title {
+    flex: 1;
+    min-width: 0;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 27px;
+    font-weight: bold;
+    padding-left: 8px;
+}
+
+.title::placeholder {
+    color: #777;
+}
+
+.top-actions {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.top-actions button {
+    width: 48px;
+    height: 55px;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 34px;
+    cursor: pointer;
+}
+
+.top-actions button:hover {
+    color: orange;
+}
+
+#menuBtn {
+    color: orange;
+    font-size: 36px;
+}
+
+/* MENU */
+
+.menu {
+    display: none;
+    position: absolute;
+    right: 15px;
+    top: 80px;
+    width: 160px;
+    background: #292929;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 100;
+    box-shadow: 0 5px 20px rgba(0,0,0,.6);
+}
+
+.menu.show {
+    display: block;
+}
+
+.menu button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background: #292929;
+    color: white;
+    text-align: left;
+    font-size: 16px;
+}
+
+.menu button:hover {
+    background: #3a3a3a;
+}
+
+/* TOP TOOLBAR */
+
+.tools-top {
+    height: 78px;
+    min-height: 78px;
+    background: #242424;
+    border-top: 1px solid #444;
+    border-bottom: 1px solid #444;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 10px;
+}
+
+.tools-top button {
+    width: 48px;
+    height: 48px;
+    border: none;
+    background: transparent;
+    color: #eee;
+    font-size: 29px;
+    cursor: pointer;
+}
+
+.tools-top button.active {
+    background: #555;
+    border-radius: 50%;
+}
+
+/* EDITOR */
+
+#editor {
+    flex: 1;
+    width: 100%;
+    background: #000;
+    color: white;
+    padding: 25px 25px;
+    outline: none;
+    border: none;
+    font-size: 17px;
+    line-height: 1.7;
+    overflow-y: auto;
+    caret-color: orange;
+}
+
+#editor:focus {
+    outline: none;
+}
+
+/* BOTTOM TEXT TOOLBAR */
+
+.tools-bottom {
+    height: 78px;
+    min-height: 78px;
+    background: #292929;
+    border-top: 1px solid #444;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 8px;
+}
+
+.tools-bottom button {
+    width: 48px;
+    height: 55px;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 29px;
+    cursor: pointer;
+}
+
+.tools-bottom button:hover {
+    color: orange;
+}
+
+#size {
+    width: 58px;
+    height: 48px;
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 22px;
+    outline: none;
+}
+
+#size option {
+    background: #222;
+    color: white;
+}
+
+/* LAST BAR */
+
+.bottom-menu {
+    height: 80px;
+    min-height: 80px;
+    background: #1b1b1b;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.bottom-menu button {
+    width: 55px;
+    height: 55px;
+    border: none;
+    border-radius: 50%;
+    background: transparent;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.bottom-menu button:hover {
+    background: #3b3b3b;
+}
+
+#more {
+    color: orange;
+    font-size: 23px;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .top {
+        height: 100px;
+        min-height: 100px;
+        padding: 0 10px;
+    }
+
+    .back {
+        width: 42px;
+        font-size: 48px;
+    }
+
+    .title {
+        font-size: 25px;
+    }
+
+    .top-actions {
+        gap: 3px;
+    }
+
+    .top-actions button {
+        width: 42px;
+        font-size: 31px;
+    }
+
+    .tools-top {
+        height: 78px;
+        min-height: 78px;
+        overflow-x: auto;
+    }
+
+    .tools-top button {
+        min-width: 48px;
+        font-size: 27px;
+    }
+
+    #editor {
+        padding: 20px;
+        font-size: 17px;
+    }
+
+    .tools-bottom {
+        height: 78px;
+        min-height: 78px;
+        overflow-x: auto;
+    }
+
+    .tools-bottom button {
+        min-width: 47px;
+    }
+
+    .bottom-menu {
+        height: 78px;
+        min-height: 78px;
+    }
+}
