@@ -1,137 +1,618 @@
-Ĺ<div align="center">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ilyaas Carab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,100:302b63&height=200&section=header&text=Yaxye%20Ahmed&fontSize=45&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Web%20Developer%20%7C%20Frontend%20Developer%20%7C%20Always%20Learning&descAlignY=55&descSize=18" width="100%"/>
+<div class="app">
+
+  <header class="top">
+    <div class="dots">
+      <i class="red"></i>
+      <i class="yellow"></i>
+      <i class="green"></i>
+    </div>
+
+    <div class="tab">
+      <span class="github">●</span>
+      <strong>Ilyaas Carab</strong>
+      <span class="x">×</span>
+    </div>
+
+    <span class="plus">+</span>
+  </header>
+
+  <div class="address">
+    <button>‹</button>
+    <button>›</button>
+    <button>⟳</button>
+
+    <div class="url">
+      🔒 github.com/Ilyaas-Carab/welcome
+    </div>
+
+    <span class="search">⌕</span>
+    <span class="three">⋮</span>
+
+    <div class="user">IC</div>
+  </div>
+
+  <div class="main">
+
+    <aside class="sidebar">
+
+      <div class="logo">●</div>
+
+      <div class="side active">‹/›</div>
+      <div class="side">⑂</div>
+      <div class="side">▷</div>
+      <div class="side">⚙</div>
+
+      <div class="repo">
+
+        <div class="repo-title">
+          <span>●</span>
+          <b>Ilyaas Carab</b>
+        </div>
+
+        <div class="branch">
+          ⑂ &nbsp; main
+          <span>⌄</span>
+        </div>
+
+        <div class="files">
+          <div class="file">› 📁 .github</div>
+          <div class="file">› 📁 src</div>
+          <div class="file">› 📁 assets</div>
+
+          <div class="file selected">
+            ▤ &nbsp; README.md
+          </div>
+
+          <div class="file">
+            ▤ &nbsp; package.json
+          </div>
+
+          <div class="file">
+            ▤ &nbsp; .gitignore
+          </div>
+        </div>
+
+      </div>
+
+      <div class="bottom">
+        <span></span> main
+      </div>
+
+    </aside>
+
+
+    <main class="content">
+
+      <div class="breadcrumb">
+        <span>Ilyaas Carab</span>
+        <b>/</b>
+        <strong>README.md</strong>
+        <button id="copy">▣</button>
+      </div>
+
+
+      <div class="commit">
+
+        <div class="avatar">IC</div>
+
+        <div class="commit-text">
+          <b>Ilyaas Carab</b>
+          <span>Ku soo dhawoow ❤️</span>
+        </div>
+
+        <div class="details">
+          ◷ &nbsp; 2 lines · 1 loc · 24 Bytes
+        </div>
+
+      </div>
+
+
+      <section class="code">
+
+        <div class="tabs">
+          <button>Preview</button>
+          <button class="active">Code</button>
+          <button>Blame</button>
+        </div>
+
+        <div class="editor">
+
+          <div class="numbers">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+          </div>
+
+          <pre><code><span class="hash">#</span> <span class="blue">Ku soo dhawoow</span>
+<span class="heart">♥</span> <span class="white">Ilyaas Carab</span>
+<span class="comment">Welcome to my project ✨</span></code></pre>
+
+        </div>
+
+      </section>
+
+    </main>
+
+  </div>
 
 </div>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=1000&color=00BFFF&center=true&vCenter=true&width=650&lines=Welcome+to+my+GitHub+Profile!;I+am+a+Web+Developer;I+Love+Coding+and+Technology;Always+Learning+New+Things+🚀" />
-</p>
+body {
+  min-height: 100vh;
+  background: #020713;
+  color: #dcecff;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
 
-<div align="center">
+.app {
+  width: 100%;
+  height: 100vh;
+  background: #050c19;
+  border: 1px solid #17365c;
+  box-shadow: 0 0 60px rgba(0, 110, 255, .15);
+}
 
-<img src="https://raw.githubusercontent.com/YaxyeAxmed/YaxyeAxmed/output/github-contribution-grid-snake.svg" width="100%" />
+/* TOP */
 
-</div>
+.top {
+  height: 62px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(90deg, #071325, #0b1d35);
+  border-bottom: 1px solid #18385e;
+}
 
-<br>
+.dots {
+  width: 130px;
+  display: flex;
+  gap: 12px;
+  padding-left: 24px;
+}
 
-## 👋 About Me
+.dots i {
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+}
 
-<table>
-<tr>
-<td width="55%" valign="middle">
+.red {
+  background: #ff4d4d;
+}
 
-- 💻 I am passionate about Web Development
-- 🌐 I build responsive and modern websites
-- 🎨 Interested in Frontend Development and UI Design
-- 🐍 Learning Python and new technologies
-- 🌱 Always learning and improving my coding skills
-- 🚀 Building projects and growing as a developer
+.yellow {
+  background: #ffbd22;
+}
 
-</td>
+.green {
+  background: #14d86c;
+}
 
-<td width="45%" align="center" valign="middle">
+.tab {
+  width: 330px;
+  height: 46px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  border-radius: 13px;
+  background: #10294b;
+  border: 1px solid #1b4d86;
+  color: white;
+  font-size: 17px;
+}
 
-<img width="350" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif">
+.github {
+  font-size: 22px;
+}
 
-</td>
-</tr>
-</table>
+.x {
+  margin-left: auto;
+  font-size: 25px;
+  color: #82a7d5;
+}
 
-<br>
+.plus {
+  margin-left: 25px;
+  font-size: 31px;
+  color: #8db6e5;
+}
 
-<!-- MOUSE FOLLOWER SECTION -->
+/* ADDRESS */
 
-## 🖱️ Interactive Mouse Effect
+.address {
+  height: 78px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 0 20px;
+  background: #071426;
+  border-bottom: 1px solid #18385e;
+}
 
-<div align="center">
+.address button {
+  border: 0;
+  background: none;
+  color: #83a9d7;
+  font-size: 32px;
+  cursor: pointer;
+}
 
-<img src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" width="450" alt="Mouse Animation">
+.url {
+  flex: 1;
+  height: 49px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  border-radius: 25px;
+  background: #0b2039;
+  border: 1px solid #183e68;
+  color: #8fb6df;
+  font-size: 15px;
+}
 
-<br><br>
+.search,
+.three {
+  font-size: 28px;
+  color: #91b9e8;
+}
 
-> ✨ Smooth animations • Interactive design • Creative coding
+.user {
+  width: 43px;
+  height: 43px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #168dff, #0753d1);
+  color: white;
+  font-weight: bold;
+}
 
-</div>
+/* MAIN */
 
-<br>
+.main {
+  height: calc(100vh - 140px);
+  display: flex;
+}
 
-## 🛠️ Languages and Tools
+/* SIDEBAR */
 
-### Frontend Development
+.sidebar {
+  width: 390px;
+  min-width: 290px;
+  position: relative;
+  background: #06101f;
+  border-right: 1px solid #18385e;
+}
 
-<p align="left">
+.logo,
+.side {
+  width: 68px;
+  height: 58px;
+  margin: 13px auto;
+  display: grid;
+  place-items: center;
+  border-radius: 13px;
+  color: #aac9ec;
+  font-size: 27px;
+}
 
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" title="HTML5" alt="HTML5" width="60" height="60"/>&nbsp;
+.logo {
+  height: 65px;
+  background: #10294b;
+  color: white;
+}
 
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" title="CSS3" alt="CSS3" width="60" height="60"/>&nbsp;
+.side {
+  cursor: pointer;
+}
 
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="60" height="60"/>&nbsp;
+.side:hover {
+  background: #102541;
+}
 
-</p>
+.side.active {
+  background: linear-gradient(135deg, #126eff, #0750d1);
+  color: white;
+  box-shadow: 0 8px 25px rgba(0, 91, 255, .25);
+}
 
-### Programming Languages
+.repo {
+  position: absolute;
+  top: 0;
+  left: 90px;
+  right: 0;
+  height: 100%;
+  border-left: 1px solid #112e50;
+}
 
-<p align="left">
+.repo-title {
+  height: 78px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 0 25px;
+  font-size: 20px;
+  border-bottom: 1px solid #112e50;
+}
 
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" title="Python" alt="Python" width="60" height="60"/>&nbsp;
+.repo-title span {
+  color: #1c91ff;
+  font-size: 25px;
+}
 
-</p>
+.branch {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 28px;
+  font-size: 18px;
+  border-bottom: 1px solid #112e50;
+}
 
-### Tools & Technologies
+.branch span {
+  margin-left: auto;
+}
 
-<p align="left">
+.files {
+  padding: 13px;
+}
 
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" title="Git" alt="Git" width="60" height="60"/>&nbsp;
+.file {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  border-radius: 10px;
+  color: #aac7eb;
+  font-size: 17px;
+  margin-bottom: 3px;
+  cursor: pointer;
+}
 
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" title="GitHub" alt="GitHub" width="60" height="60"/>&nbsp;
+.file:hover {
+  background: #0d213a;
+}
 
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg" title="VS Code" alt="VS Code" width="60" height="60"/>&nbsp;
+.file.selected {
+  color: white;
+  background: linear-gradient(90deg, #0759dc, #123f8f);
+  border-left: 3px solid #24a9ff;
+}
 
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" title="React" alt="React" width="60" height="60"/>&nbsp;
+.bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-left: 25px;
+  border-top: 1px solid #112e50;
+  font-size: 18px;
+}
 
-</p>
+.bottom span {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #00e879;
+}
 
-<br>
+/* CONTENT */
 
-## 📊 GitHub Stats
+.content {
+  flex: 1;
+  padding: 38px 32px;
+  overflow: auto;
+}
 
-<div align="center">
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 28px;
+  font-size: 23px;
+}
 
-<img src="https://github-readme-stats.vercel.app/api?username=YaxyeAxmed&show_icons=true&theme=default&hide_border=true&count_private=true" width="49%" />
+.breadcrumb span {
+  color: #1592ff;
+  font-weight: bold;
+}
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YaxyeAxmed&layout=compact&theme=default&hide_border=true" width="49%" />
+.breadcrumb b {
+  color: #6684a8;
+}
 
-<br/>
+.breadcrumb strong {
+  color: #f1f6ff;
+}
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=YaxyeAxmed&theme=default&hide_border=true" width="60%" />
+#copy {
+  border: 0;
+  background: none;
+  color: #9fc2e8;
+  font-size: 24px;
+  cursor: pointer;
+}
 
-</div>
+/* COMMIT */
 
-<br>
+.commit {
+  min-height: 73px;
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  border-radius: 13px;
+  border: 1px solid #18385e;
+  background: linear-gradient(90deg, #091a30, #081526);
+}
 
-## 🌐 Connect with Me
+.avatar {
+  width: 43px;
+  height: 43px;
+  display: grid;
+  place-items: center;
+  margin-right: 15px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #168dff, #063e9e);
+  color: white;
+  font-weight: bold;
+}
 
-<p align="center">
+.commit-text {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 18px;
+}
 
-<a href="https://linkedin.com/in/YOUR-LINKEDIN">
-<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
-</a>
+.commit-text span {
+  color: #70a4db;
+}
 
-<a href="mailto:YOUR-EMAIL@example.com">
-<img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
-</a>
+.details {
+  margin-left: auto;
+  color: #7e9fc6;
+  font-size: 14px;
+}
 
-</p>
+/* CODE */
 
-<br>
+.code {
+  margin-top: 22px;
+  min-height: 520px;
+  border: 1px solid #18385e;
+  border-radius: 13px;
+  overflow: hidden;
+  background: #030a17;
+}
 
-<div align="center">
+.tabs {
+  height: 68px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  gap: 4px;
+  border-bottom: 1px solid #18385e;
+}
 
-![Profile Views](https://komarev.com/ghpvc/?username=YaxyeAxmed&color=blueviolet&style=for-the-badge&label=PROFILE+VIEWS)
+.tabs button {
+  height: 48px;
+  padding: 0 28px;
+  border: 0;
+  border-radius: 12px;
+  background: transparent;
+  color: #a9c5e6;
+  font-size: 17px;
+  cursor: pointer;
+}
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:302b63,100:0f0c29&height=100&section=footer" width="100%"/>
+.tabs button:hover {
+  background: #102641;
+}
 
-</div>
-# project-based
+.tabs button.active {
+  background: linear-gradient(135deg, #1686ff, #075bd9);
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 5px 20px rgba(0, 100, 255, .25);
+}
+
+/* EDITOR */
+
+.editor {
+  min-height: 450px;
+  display: flex;
+  font-family: Consolas, Monaco, monospace;
+  font-size: 18px;
+}
+
+.numbers {
+  width: 70px;
+  padding-top: 25px;
+  text-align: center;
+  line-height: 38px;
+  color: #58769b;
+  border-right: 1px solid #122f50;
+}
+
+.editor pre {
+  flex: 1;
+  padding: 27px 30px;
+  line-height: 38px;
+}
+
+.hash {
+  color: #20a8ff;
+  font-weight: bold;
+}
+
+.blue {
+  color: #18baff;
+  font-weight: bold;
+}
+
+.heart {
+  color: #ff4e76;
+}
+
+.white {
+  color: #f1f6ff;
+  font-weight: bold;
+}
+
+.comment {
+  color: #7192b7;
+}
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+  .sidebar {
+    width: 270px;
+  }
+
+  .repo {
+    left: 65px;
+  }
+
+  .details {
+    display: none;
+  }
+
+  .content {
+    padding: 25px 15px;
+  }
+
+  .url {
+    font-size: 11px;
+  }
+
+  .commit-text {
+    font-size: 14px;
+  }
+}
+
+<script src="script.js"></script>
+</body>
+</html>
